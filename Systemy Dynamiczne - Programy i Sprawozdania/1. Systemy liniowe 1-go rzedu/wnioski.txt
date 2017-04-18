@@ -1,0 +1,14 @@
+WPC jest warunkiem pocz¹tkowym kondensatora. 
+
+Mo¿emy zaobserwowaæ, ¿e im wy¿sze jest WPC, tym wolniej kondensator siê roz³adowuje (pocz¹tkowy stan jest wy¿szy).
+
+Zauwa¿my, ¿e wartoœæ R*C reprezentuje sta³¹ czasow¹ dla symulowanego uk³adu.
+
+Szacowany czas trwania stanu nieustalonego dla uk³adu to od 3 do 5 sta³ych czasowych.
+
+Zatem manipuluj¹c wartoœciami R i C, wp³ywamy jednoczeœnie na sta³¹ czasow¹, co w rezultacie skutkuje nastêpuj¹c¹ zale¿noœci¹:
+
+Im wy¿sza wartoœæ parametrów R i C, tym wolniej system roz³adowuje siê. 
+
+Jednoczeœnie im ni¿sza wartoœæ parametrów R i C, tym szybciej system roz³adowuje siê. 
+

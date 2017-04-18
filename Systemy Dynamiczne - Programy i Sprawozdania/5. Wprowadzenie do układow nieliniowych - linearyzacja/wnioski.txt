@@ -1,0 +1,35 @@
+﻿ad.1)
+a)
+Wnioskując z ilustracji (1), możemy powiedzieć, że w punkcie równowagi 0 system jest lokalnie asymptotycznie stabilny, natomiast punkt równowagi 1/e jest niestabilny.
+
+b)
+Wnioskując z ilustracji (2), możemy powiedzieć, że punkt równowagi:
+(0;0)
+Jest niestabilny
+
+c)
+Wnioskując z ilustracji(3), możemy powiedzieć, że system w punkcie równowagi (0;0) jest lokalnie asymptotycznie stabilny.
+
+Zaś punkt równowagi (-2/3;0) będzie niestabilny
+
+ad.2)
+Dla parametru e = 0, system zachowuje się jednakowo, co system zlinearyzowany dla punktu równowagi 0 (czynnik nieliniowy wówczas znika)
+
+Następnie, im mniejszy co do modułu jest parametr e, tym większy jest obszar otoczenia, w który dynamiki systemu zlienaryzowanego i nieliniowego są podobne (mniejszy wpływ ma wówczas czynnik nieliniowy, gdyż jest mnożony przez mniejszą liczbę). I odwrotnie, gdy moduł parametru e rośnie, tym mniejszy jest obszar otoczenia, w który dynamiki systemu zlienaryzowanego i nieliniowego są podobne (większą wagę ma wówczas czynnik nieliniowy, gdyż jest mnożony przez większą liczbę).
+
+ad.3) Brak hiperboliczności: W przykładzie drugim, macierz Jakobiego dla punktu równowagi (0;0) ma dwie wartości własne:
+lambda_1 = 0
+lambda_2 = -1
+
+Ponieważ lambda_1 = 0, więc 1 metoda Lapunowa nie rozstrzyga o stabilności punktu równowagi.
+
+Z ilustracji (2) odczytujemy, że punkt równowagi jest niestabilny
+
+ad.4)
+Wartości własne macierzy Jakobiego dla punktu równowagi (0;0):
+lambda1 = -1/2 -j*sqrt(3)/2
+lambda2 = -1/2 +j*sqrt(3)/2
+
+Owe wartości nie leżą na osi urojonej, więc spełniają warunki twierdzenia Grobmana-Hartmana
+
+Z ilustracji (3), (4) i (5), możemy zaobserwować, że trajektorie fazowe systemu nieliniowego w pewnym otoczeniu obu punktów równowagi zachowują się podobnie jak trajektorie układu zlinearyzowanego.

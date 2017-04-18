@@ -1,0 +1,62 @@
+﻿ad1)
+W pierwszym kroku (wykresy 1,2,3) sprawdziłem wpływ przesunięcia fazowego sygnału wejściowego na sygnał wyjściowy. Z teorii znany jest wzór, który mówi że przesunięcie fazowe sygnału wyjściowego równe jest sumie: argument główny transmitacji widmowej + przesunięcie fazowe sygnału wejściowego. Za pomocą symulacji, empirycznie, można potwierdzić ten wzór, gdyż zmiana przesunięcia fazowego wejścia przenosi się na przesunięcie fazowe wyjścia. Zmiana przesunięcia fazowego wejścia nie ma natomiast wpływu na długość stanu nieustalonego sygnału wyjściowego.
+
+W drugim kroku (wykresy 3,4,5) sprawdziłem wpływ zmiany pulsacji sygnału wejściowego na pulsację sygnału wyjściowego. Ponieważ sygnał wejściowy jest sinusoidalny, więc zwiększenie pulsacji powoduje zmniejszenie okresu sinusoidalnego sygnału wyjściowego oraz zmniejszenie pulsacji wejścia powoduje zwiększenie okresu wyjścia. (Pulsacja jest związana z częstością zależnością częstotliwość = pulsacja/(2*pi). Można również zauważyć zależność: w pewnych zakresach częstości następuje wzmocnienie sygnału wyjściowego a w pewnych następuje tłumienie sygnału wyjściowego. Zależność tą potwierdza wyrysowana charakterystyka Bodego dla
+
+W trzecim kroku (wykresy 6,7,8) sprawdziłem wpływ zmiany amplitudy sygnału wejściowego na amplitudę sygnału wyjściowego. 
+Z teorii znamy zależność: Amplituda sygnału wyjściowego jest wprost proporcjonalna do amplitudy sygnału wejściowego. Symulacja potwierdza ową zależność: zmiana amplitudy sygnału wejściowego powoduje proporcjonalną zmianę amplitudy sygnału wyjściowego.
+
+ad2) Układ zamknięty wówczas będzie asymptotycznie stabilny, jeśli układ otwarty jest asymptotycznie stabilny oraz wykres charakterystyki
+amplitudowo-fazowej transformacji G(s) (Nyquist plot) nie będzie obejmował punktu o współrzędnych (-1; 0) na płaszczyźnie zespolonej.
+
+Układ otwarty o transmitancji G(s)=1/(s^2 + s + 2) jest stabilny oraz charakterystyka amplitudowo-fazowa (charakterystyka Nyquista) nie obejmuje punktu (-1;0) na płaszczyźnie zespolonej. Zatem układ zamknięty o transmitancji G(s)=1/(s^2 + s + 2) będzie asymptotycznie stabilny
+
+Układ otwarty o transmitancji G(s)=s/(s^2 - 0.1s + 1) jest niestabilny. Zatem kryterium Nyquista jest niespełnione. Układ zamknięty będzie niestabilny.
+
+ad3) 
+Filtr dolnoprzepustowy: z charakterystyki Bodego - część amplitudowa - możemy zauważyć, że dla coraz to wyższych częstotliwości sygnał jest tłumiony, co oznacza, że "przejdą" w głównej mierze częstotliwości niskie. Faza zmniejsza się, im większa jest częstotliwość.
+
+Filtr Górnoprzepustowy: z charakterystyki Bodego - część amplitudowa - możemy zauważyć, że dla coraz to niższych częstotliwości sygnał jest tłumiony, co oznacza, że "przejdą" w głównej mierze częstotliwości wysokie. Faza zmniejsza się, im większa jest częstotliwość.
+
+Filtr Pasmoprzepustowy: z charakterystyki Bodego - część amplitudowa - możemy zauważyć, że poza pewnym pasmem sygnał jest tłumiony, co oznacza, że "przejdą" w głównej mierze częstotliwości z owego pasma. Faza zmniejsza się, im większa jest częstotliwość.
+
+Filtr drugiego rzędu: z charakterystyki Bodego - część amplitudowa - możemy zauważyć, że filtr przepuszcza do pewnego momentu częstotliwości niskie, podbija pewien wyszczególniony przedział częstotliwości, po czym tłumi wyższe częstotliwości. Jest to filtr aktywny. Faza zmniejsza się, im większa jest częstotliwość.
+
+Filtr dolnoprzepustowy:
+dla sygnałów
+a) Ma znikomy wpływ na sygnał wejściowy
+b) Nieco tłumi sygnał do pewnej amplitudy
+c) Mocno tłumi sygnał
+d) Nie tłumi sygnału
+e) Dosyć mocno tłumi (niemal połowicznie)
+suma) Oscylacje
+
+Filtr Górnoprzepustowy:
+dla sygnałów
+a) Tłumi sygnał całkowicie
+b) Tłumi sygnał do pewnej amplitudy dosyć mocno
+c) nie tłumi sygnału mocno
+d) Wytłumia sygnał całkowicie
+e) Dosyć mocno tłumi (niemal połowicznie)
+suma) Sygnał amplituda prawie 6dB
+
+Filtr Pasmoprzepustowy:
+dla sygnałów
+a) Tłumi sygnał całkowicie
+b) Tłumi sygnał do pewnej amplitudy dosyć mocno
+c) Mocno tłumi sygnał
+d) Wytłumia sygnał całkowicie
+e) Nie tłumi
+suma) Sygnał amplituda prawie ponad 2dB
+
+Filtr drugiego rzędu:
+dla sygnałów
+a) ma znikomy wpływ
+b) Słabo tłumi
+c) Bardzo mocno tłumi sygnał
+d) Ma znikomy wpływ
+e) Wzmacnia sygnał
+suma) Oscylacje, sygnał o bardzo wysokiej amplitudzie
+
+ad4)
+Aby filtr dolnoprzepustowy tłumił o co najmniej 20dB częstotliwości wyższe niż częstotliwość graniczna podana przez prowadzącego, iloczyn R*C powinien wynosić: 0.0159. Czyli możemy dobrać na przykład {R=0.0159 [ohm] ; C = 1 [F]}

@@ -1,0 +1,103 @@
+﻿Temat zajęć: tematem zajęć jest uzyskanie portretów fazowych dla różnych rozkładów wartości własnych. Równanie stanu zaprojektowane w Simulinku przyjmuje postać:
+
+dx/dt = Ax
+y = x
+
+Rozważamy zatem liniowe systemy autonomiczne
+
+Należy zadbać o to, aby wektory wartości początkowych były jak najbardziej różnorodne, aby trajektorie startowały z różnych punktów, tym samym lepiej oddając dynamikę systemu
+
+Występuje 9 podstawowych przypadków:
+
+ad1) Podwójna wartość własna w 0, liniowy dzielnik elementarny
+J=
+[0 0]
+[0 0]
+
+-Portret fazowy przyjmuje wygląd kropek
+-Zmiana wektorów własnych nie powoduje zmian w portrecie
+
+ad2) Podwójna wartość własna w 0, nieliniowy dzielnik elementarny
+J=
+[0 1]
+[0 0]
+
+-Portret fazowy przyjmuje postać linii równoległych, zaś na osi Ox1 pojawiają się kropki
+-Zmiana wektorów własnych powoduje "zniekształcenie" portretu (wartości własne "wyznaczają nowe osie")
+-Zmienianie się wartości własnych powoduje że układ "zwalnia/przyspiesza" i wolniej/szybciej dochodzi do danego stanu
+
+ad3) Jedna wartość własna w 0, druga ujemna
+J=
+[0 0]
+[0 -1]
+
+-Portret fazowy przyjmuje postać równoległych do siebie linii prostych
+-System jest stabilny, gdyż część rzeczywista jednej wartości własnej jest ujemna, a drugiej wynosi 0
+-Zmiana wektorów własnych powoduje "zniekształcenie" portretu (wartości własne "wyznaczają nowe osie")
+-Zmienianie się wartości własnych powoduje że układ "zwalnia/przyspiesza" i wolniej/szybciej dochodzi do danego stanu
+
+ad4) Obie wartości własne ujemne
+J=
+[-1 0]
+[0 -2]
+
+-Portret fazowy przyjmuje postać tak zwanego "węzła" - czyli wypukłe trajektorie zewsząd zbiegają do środka układu współrzędnych
+-System jest asymptotycznie stabilny, gdyż obie wartości własne leżą w lewej półpłaszczyźnie
+-Zmiana wektorów własnych powoduje "zniekształcenie" portretu (wartości własne "wyznaczają nowe osie")
+-Gdy będziemy wartość pierwszej wartości własnej zbliżać do drugiej wartości własnej, to portret fazowy coraz bardziej będzie przypominał "gwiazdę"
+-Zwiększenie elementu macierzy (2,2) (drugiej wartości własnej) powoduje, że trajektorie "zbiegają do osi Ox1" coraz dalej od środka układu współrzędnych
+
+ad5) Podwójna wartość własna ujemna, liniowy dzielnik elementarny
+J=
+[-1 0]
+[0 -1]
+
+-Portret fazowy przyjmuje postać tak zwanej "gwiazdy" - czyli trajektorie w postaci linii prostych zewsząd zbiegają do środka układu współrzędnych
+-System jest asymptotycznie stabilny, gdyż obie wartości własne leżą w lewej półpłaszczyźnie
+-Zmiana wektorów własnych nie powoduje zmiany portretu
+-Zmienianie się wartości własnych powoduje że układ "zwalnia/przyspiesza" i wolniej/szybciej dochodzi do danego stanu
+
+ad6) Podwójna wartość własna ujemna, nieliniowy dzielnik elementarny
+J=
+[-1 1]
+[0 -1]
+
+-Portret fazowy przyjmuje postać tak zwanego "węzła zdegenerowanego" - czyli zagięte, haczykowate trajektorie zewsząd zbiegają do środka układu współrzędnych
+-System jest asymptotycznie stabilny, gdyż obie wartości własne leżą w lewej półpłaszczyźnie
+-Zmiana wektorów własnych powoduje "zniekształcenie" portretu (wartości własne "wyznaczają nowe osie")
+-Zmiana wartości własnych: im większa dysproporcja między częścią rzeczywistą a częścia urojoną wartości własnej tym bardziej portret się odkształca:
+-Jeśli część urojona będzie znacznie większa od części rzeczywistej, to trajektorię się "zakręcą"
+-Jeśli część rzeczywista będzie znacznie większa od części urojonej, to trajektorie się "wyprostują" i zaczną coraz bardziej przypominać postać "gwiazdy"
+
+ad7) Dwie wartości własne, jedna dodatnia, druga ujemna
+J=
+[1 0]
+[0 -1]
+
+-Portret fazowy przyjmuje postać tak zwanego "siodła" - czyli "fali wypływających od środka współrzędnych"
+-System jest niestabilny, gdyż wartości jedna wartość własna leży w lewej, a druga w prawej półpłaszczyźnie
+-Zmiana wektorów własnych powoduje "zniekształcenie" portretu (wartości własne "wyznaczają nowe osie")
+-Zmienianie się wartości własnych powoduje że układ "zwalnia/przyspiesza" i wolniej/szybciej dochodzi do danego stanu
+
+ad8) Para sprzężona wartości własnych Re!=0
+J=
+[-1 1]
+[-1 -1]
+
+-Portret fazowy przyjmuje postać tak zwanego "ogniska" - czyli zagięte trajektorie ogniskują do środka układu współrzędnych
+-System jest asymptotycznie stabilny, gdyż obie wartości własne leżą w lewej półpłaszczyźnie
+-Zmiana wektorów własnych powoduje "zniekształcenie" portretu (wartości własne "wyznaczają nowe osie")
+-Zmiana wartości własnych: im większa dysproporcja między częścią rzeczywistą a częścia urojoną wartości własnej tym bardziej portret się odkształca:
+-Jeśli część rzeczywista będzie znacznie większa od części urojonej, to trajektorie się "wyprostują" i zaczną coraz bardziej przypominać postać "gwiazdy"
+-Jeśli część urojona będzie znacznie większa od części rzeczywistej, to portret się "zagęści"
+
+ad9) Para sprzężona wartości własnych urojonych
+J=
+[0 1]
+[-1 0]
+
+-Portret fazowy przyjmuje postać okręgów o środkach w środku układu współrzędnych
+-Zmiana wektorów własnych powoduje "zniekształcenie" portretu (wartości własne "wyznaczają nowe osie")
+-Zmienianie się wartości własnych powoduje że układ "zwalnia/przyspiesza" i wolniej/szybciej dochodzi do danego stanu
+
+Należy zadbać o to, aby wektory wartości początkowych były jak najbardziej różnorodne, aby trajektorie startowały z różnych punktów, tym samym lepiej oddając dynamikę systemu

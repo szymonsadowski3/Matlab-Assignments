@@ -1,0 +1,34 @@
+﻿ad2)
+
+Jak mozemy zauwazyć, parametr e "reguluje" wpływ czynnika nieliniowego na system. Im mniejszy będzie parametr e, tym mniejszy wpływ będzie miał czynnik nieliniowy oraz im większy parametr e, tym większy wpływ będzie miał czynnik nieliniowy. 
+
+Im mniejszy będzie parametr e, tym trajektorie oscylatora Van der Pol’a będą coraz bardziej przypominały trajektorie tego systemu liniowego (w pewnym otoczeniu):
+
+x' = A*x
+,gdzie A = [0 1; -1 0]
+
+ad3)
+
+Chcemy znaleźć punkty równowagi, więc rozwiązujemy równanie:
+
+ax - x^3 = 0
+x(a-x^2) = 0
+
+Z czego wynika,że System posiada 3 punkty równowagi:
+x_1 = 0
+x_2 = a^(1/2)
+x_3 = - a^(1/2)
+
+Jeśli a<0, to: 
+punkt równowagi x_1 = 0, będzie asymptotycznie stabilny
+punkt równowagi x_2 = a^(1/2) będzie niestabilny
+punkt równowagi x_3 = - a^(1/2) będzie niestabilny
+
+Jeśli a>0, to: 
+punkt równowagi x_1 = 0, będzie niestabilny
+punkt równowagi x_2 = a^(1/2) będzie asymptotycznie stabilny
+punkt równowagi x_3 = - a^(1/2) będzie asymptotyczniey
+
+ad5)
+
+Jak możemy zauważyć, przy warunku początkowym 0.5 i lambda = 3.8, występują zachowania chaotyczne.
